@@ -24,6 +24,7 @@ input[type="button"]{
 } 
 input[type="text"]{
   width:124px;
+  flex-wrap: wrap;
 } 
 .card{
   margin:20px;
@@ -32,7 +33,9 @@ input[type="text"]{
   border:1px solid gray;
   border-radius:10px;
   box-shadow:2px 2px 2px black;
-  /* Challenge 4: Set the flex to 0 0 150px */
+  /* Challenge 4: Set the flex to 0 0 150px and text-align to center*/
+  text-align: center;
+  flex: 0 0 150px;
 
 }
 
@@ -41,7 +44,17 @@ input[type="text"]{
             2) Set object-fit to cover;
 */
 
+.pizza{
+  width: 250x;
+  height: 250px;
+  object-fit: cover;
+}
+
 /* Challenge 6: Create CSS class rule named title to used with the title images.  
                 Set height to an appropriate size
 
 */
+
+.title{
+  height: 50px;
+}

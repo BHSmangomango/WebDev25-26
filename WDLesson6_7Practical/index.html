@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>WD_6.7 Practical</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="DropBox.js"></script>
     <script src="script.js"></script>
    </head>
 
@@ -62,7 +63,14 @@
 
         <div class="card">
           <h3>SEARCH By Borough</h3>
-          <input type="text" id="boro" placeholder="Enter borough">
+          <select id="boro">
+            <option disabled>Select Borough</option>
+            <option>MANHATTAN</option>
+            <option>QUEENS</option>
+            <option>BROOKLYN</option>
+            <option>BRONX</option>
+            <option>STATEN ISLAND</option>
+          </select>
           <hr></hr>
           <a class="button" onclick="borough_name()"> Search </a>
         </div>

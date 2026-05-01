@@ -9,17 +9,17 @@ async function init(){
   let build = "";
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
+    let crash = data[i];
     build += `<div class="fitted card">
-                 <h3>${collision.borough}</h3>
+                 <h3>${crash.borough}</h3>
                  <hr>
-                 <p>${collision.zip_code}</p>
-                 <p>${collision.vehicle_type_code1}</p>
-                 <p>${collision.crash_date}</p>
+                 <p>${crash.zip_code}</p>
+                 <p>${crash.vehicle_type_code1}</p>
+                 <p>${crash.crash_date}</p>
                  <hr>
-                 <p>${collision.on_street_name}</p>
+                 <p>${crash.on_street_name}</p>
                  <hr>
-                 <p>${collision.off_street_name}</p>
+                 <p>${crash.off_street_name}</p>
               </div>`;    
   }
   output.innerHTML = build;
@@ -35,18 +35,18 @@ function borough_name(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.borough == borough){
+    let crash = data[i];
+    if(crash.borough == borough){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
@@ -65,18 +65,18 @@ function zip_code_number(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.zip_code == zipcode){
+    let crash = data[i];
+    if(crash.zip_code == zipcode){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
@@ -95,18 +95,18 @@ function vehicle_type(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.vehicle_type_code1 == vehicle_type){
+    let crash = data[i];
+    if(crash.vehicle_type_code1 == vehicle_type){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
@@ -124,18 +124,18 @@ function street_name_off(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.off_street_name == street_off){
+    let crash = data[i];
+    if(crash.off_street_name == street_off){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
@@ -153,18 +153,18 @@ function street_name_on(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.on_street_name == street_on){
+    let crash = data[i];
+    if(crash.on_street_name == street_on){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
@@ -182,18 +182,18 @@ function crash_date(){
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-    if(collision.crash_date == crash_date){
+    let crash = data[i];
+    if(crash.crash_date == crash_date){
       build += `<div class="fitted card">
-                    <h3>${collision.borough}</h3>
+                    <h3>${crash.borough}</h3>
                     <hr>
-                    <p>${collision.zip_code}</p>
-                    <p>${collision.vehicle_type_code1}</p>
-                    <p>${collision.crash_date}</p>
+                    <p>${crash.zip_code}</p>
+                    <p>${crash.vehicle_type_code1}</p>
+                    <p>${crash.crash_date}</p>
                     <hr>
-                    <p>${collision.on_street_name}</p>
+                    <p>${crash.on_street_name}</p>
                     <hr>
-                    <p>${collision.off_street_name}</p>
+                    <p>${crash.off_street_name}</p>
                 </div>`;
       ct += 1;
     }
